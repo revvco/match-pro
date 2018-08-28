@@ -3,8 +3,9 @@ module MatchPro
     class BaseService
       attr_accessor :public_key, :partner_key
 
-      def initialize(api_key)
+      def initialize(api_key, private_key = nil)
         @api_key = api_key
+        @private_key = private_key
       end
 
       protected
@@ -54,6 +55,11 @@ module MatchPro
             params["360matchpro_public_key"] = @api_key
           end
         end
+
+        if @private_key
+          params["360matchpro_private_key"] = @private_key
+        end
+        
         params
       end
  
