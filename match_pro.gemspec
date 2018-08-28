@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "match_pro/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "match-pro"
+  spec.name          = "match_pro"
   spec.version       = MatchPro::VERSION
   spec.authors       = ["Sikandar Shukla"]
   spec.email         = ["sik@revv.co"]
