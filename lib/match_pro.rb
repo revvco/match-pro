@@ -6,14 +6,17 @@ require 'hashie'
 require 'openssl'
 require 'base64'
 
-module I360
+module MatchPro
   autoload :Api, 'match_pro/api'
+  autoload :PartnerApi, 'match_pro/partner_api'
+
   autoload :VERSION, 'match_pro/version'
 
   # Models
   autoload :Base, 'match_pro/models/base'
   autoload :Account, 'match_pro/models/account'
   autoload :Donation, 'match_pro/models/donation'
+  autoload :General, 'match_pro/models/general'
 
   module Requests
   end

@@ -8,7 +8,7 @@ module MatchPro
       end
 
       def verify_account
-        get(Util::Config.get('endpoints.verify_account'), nil)
+        get(Util::Config.get('endpoints.verify_account'))
       end
     end
 

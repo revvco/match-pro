@@ -1,4 +1,4 @@
-module Matchpro
+module MatchPro
   class Base < Hashie::Dash
     include Hashie::Extensions::Dash::Coercion
     include Hashie::Extensions::Dash::PropertyTranslation

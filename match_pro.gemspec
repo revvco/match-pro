@@ -5,7 +5,7 @@ require "match_pro/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "match-pro"
-  spec.version       = I360::VERSION
+  spec.version       = MatchPro::VERSION
   spec.authors       = ["Sikandar Shukla"]
   spec.email         = ["sik@revv.co"]
 
