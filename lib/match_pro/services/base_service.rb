@@ -31,7 +31,11 @@ module MatchPro
         url = URI::join(Util::Config.get('endpoints.base_url'), path).to_s
         body = add_key(body)
         response = RestClient.post(url, body.to_json, get_headers)
-        json_response = JSON.parse(response.body)
+        json_response = if response.body.present?
+          JSON.parse(response.body)
+        else
+          { response: "No Data"}
+        end
         begin
           response_type.new json_response
         rescue => e
